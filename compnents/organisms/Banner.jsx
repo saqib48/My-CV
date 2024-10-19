@@ -11,7 +11,7 @@ function Banner() {
       <div data-aos="fade-up-right" className=" flex flex-col gap-[10px]">
         <Heading level='1' >SAQIB IJAZ</Heading>
         <Heading level='2' >FrontEnd Developer</Heading>
-        <button className='new-button w-[45%] ' >Get Connected</button>
+        <button className='new-button w-[45%] '>Get Connected</button>
       </div>
       <div data-aos="flip-left" className="">
         <img src="/assits/images/SAQIB.jpg" alt="" className='w-[400px] h-[400px] rounded-full object-cover	' />

@@ -87,7 +87,7 @@ function AboutMe() {
               </div>
               <div className=" flex flex-col gap-[10px] py-[20px] pl-[30px] pr-[40px] w-[400px]  ">
                 <h1 className='text-[16px] font-medium text-customGray ' >Address</h1>
-                <h1 className='text-[16px] font-normal text-gray-600 ' >Chiniot, Pakistan</h1>
+                <h1 className='text-[16px] font-normal text-gray-600 ' >Lahore, Pakistan</h1>
                 <h1 className='text-[16px] font-medium text-customGray ' >Degree</h1>
                 <h1 className='text-[16px] font-normal text-gray-600 ' >BsCs</h1>
                 <h1 className='text-[16px] font-medium text-customGray ' >Freelance</h1>
