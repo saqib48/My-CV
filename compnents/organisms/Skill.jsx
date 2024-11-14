@@ -2,7 +2,7 @@ import React from 'react'
 import ProgressBar from './ProgressBar'
 
 function Skill() {
-  return (
+  return ( 
     <div className="">
       <ProgressBar />
     </div>
