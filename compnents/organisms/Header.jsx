@@ -49,30 +49,27 @@ function Header() {
 
           {/* Social Icons */}
           <div className="icons flex justify-center gap-[10px] mt-4 md:mt-0">
-            <a
-              href="https://www.facebook.com/profile.php?id=61551259444727"
+            <Link
+              href="https://www.facebook.com/saqib.ijaz.501151"
               target="_blank"
               rel="noopener noreferrer"
             >
               <LiaFacebookF className="hover:text-gray-500 cursor-pointer ease-in duration-300 h-[20px] w-[20px]" />
-            </a>
-            <a href="#">
-              <FaTwitter className="hover:text-gray-500 cursor-pointer ease-in duration-300 h-[20px] w-[20px]" />
-            </a>
-            <a
-              href="https://www.instagram.com/codewithpassion4/"
+            </Link>
+            <Link
+              href="https://www.instagram.com/saqib__jut1/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <RiInstagramFill className="hover:text-gray-500 cursor-pointer ease-in duration-300 h-[20px] w-[20px]" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ali-mehtab-8352b22b0/"
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/saqib-ijaz-34590a2a3/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin className="hover:text-gray-500 cursor-pointer ease-in duration-300 h-[20px] w-[20px]" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
