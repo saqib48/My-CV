@@ -24,8 +24,8 @@ const Portfolio = () => {
       img: "/assits/images/alfahd.webp",
     },
     {
-      title: "Learn Genroar",
-      img: "/assits/images/genroar.png",
+      title: "Genroar Clothing",
+      img: "/assits/images/gen.png",
     },
   ];
 
@@ -44,7 +44,7 @@ const Portfolio = () => {
                 height={200}
                 src={project.img}
                 alt={project.title}
-                className="w-full h-48 object-contain"
+                className="w-full h-48 object-fit"
               />
               <div className="p-4 text-center">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
