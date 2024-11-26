@@ -3,12 +3,10 @@ import React, { useState } from 'react';
 import { CiMedal } from "react-icons/ci";
 import "../../app/globals.css";
 import DownloadButton from '../atoms/DownloadButton';
+import Image from 'next/image';
 
 function AboutMe() {
   const [style1, setStyle1] = useState({
-    transform: 'perspective(300px) rotateX(0deg) rotateY(0deg)',
-  });
-  const [style2, setStyle2] = useState({
     transform: 'perspective(300px) rotateX(0deg) rotateY(0deg)',
   });
 
@@ -33,71 +31,89 @@ function AboutMe() {
   };
 
   return (
-    <div className=' pt-[70px] border-box '>
-      <div className="inner  w-[100%] ">
-        <div className="main1 w-[100%] text-center flex flex-col gap-[10px] pl-[80px]">
-          <h2 data-aos="fade-left" className='text-[21px] font-medium text-customGray'>About Me</h2>
-          <h2 data-aos="fade-right" className='text-[40px] font-medium text-customGray leading-11'>
-            A Passionate Developer <br /> Who Loves to Code
-          </h2>
+    <div className="pt-16">
+      <div className="text-center mb-12">
+        <h2 className="text-lg font-medium text-customGray">
+          About Me
+        </h2>
+        <h2
+          data-aos="fade-right"
+          className="text-2xl md:text-4xl font-medium text-customGray leading-tight"
+        >
+          A Passionate Developer <br /> Who Loves to Code
+        </h2>
+      </div>
+      <div className="flex justify-between gap-16 md:flex-row flex-col">
+        {/* Left Section */}
+        <div className="">
+          <div
+            className="relative w-full md:w-[50%] lg:w-[100%] rounded-2xl overflow-hidden"
+            style={style1}
+            onMouseMove={(e) => handleMouseMove(e, setStyle1)}
+            onMouseLeave={() => handleMouseLeave(setStyle1)}
+          >
+            <Image
+              width={400}
+              height={300}
+              data-aos="fade-right"
+              src="/assits/images/SAQIB.jpg"
+              className="rounded-2xl"
+              alt="saqib"
+            />
+          </div>
         </div>
-        <div className="outer flex pt-[80px]  w-[100%] ">
-          <div className="main2 w-[50%]">
-            <div className="box absolute flex w-[65%]">
-              <div data-aos="fade-left" className="h-[60px] w-[60px] relative top-[140px] right-[5%] rounded-[10px] bg-customGray flex items-center justify-center">
-                <CiMedal className='text-[38px] font-medium text-white' />
+
+        {/* Right Section */}
+        <div className="flex-1 flex flex-col gap-6">
+          <h2 data-aos="fade-left" className="text-lg font-medium text-customGray">About Me</h2>
+          <p
+            data-aos="fade-left"
+            className="text-sm md:text-base font-medium text-gray-600 leading-relaxed"
+          >
+            Software Engineer with 2 years of experience in designing, developing, and implementing
+            applications and solutions using a range of technologies and programming languages.
+            Seeking to leverage broad development experience and hands-on technical expertise in a
+            challenging role as a Frontend Developer.
+          </p>
+          <div
+            data-aos="fade-left"
+            className="flex flex-wrap gap-4 border border-customGray rounded-lg p-4 divide-y md:divide-y-0 md:divide-x"
+          >
+            <div className="flex-1 flex flex-col gap-4">
+              <div>
+                <h3 className="text-sm font-medium text-customGray">Name</h3>
+                <p className="text-sm font-normal text-gray-600">SAQIB IJAZ</p>
               </div>
-              <div className="image w-[40%] relative rounded-[20px]">
-                <div className="w-[100%]"
-                  style={style1}
-                  onMouseMove={(e) => handleMouseMove(e, setStyle1)}
-                  onMouseLeave={() => handleMouseLeave(setStyle1)}
-                >
-                  <img data-aos="fade-right" src="/assits/images/SAQIB.jpg" className='rounded-[15px]' alt="saqib" />
-                </div>
-                <div className="image2  absolute top-[290px] left-[-130px]"
-                  style={style2}
-                  onMouseMove={(e) => handleMouseMove(e, setStyle2)}
-                  onMouseLeave={() => handleMouseLeave(setStyle2)}
-                >
-                  <img data-aos="fade-right" src="/assits/images/Capture.png" className='rounded-[10px]' alt="" />
-                </div>
+              <div>
+                <h3 className="text-sm font-medium text-customGray">Email</h3>
+                <p className="text-sm font-normal text-gray-600">saqibijaz488@gmail.com</p>
               </div>
-              <div data-aos="fade-left" className="year mb-[10px] absolute flex items-center gap-[5px] bottom-[-90px] right-[490px]">
-                <div className="w-[8px] h-[50px] bg-customGray"></div>
-                <h2 className='text-[45px] font-medium text-gray-600'>2</h2>
-                <p className='text-[16px] font-medium text-gray-600'>Successful Years</p>
+              <div>
+                <h3 className="text-sm font-medium text-customGray">Phone</h3>
+                <p className="text-sm font-normal text-gray-600">+92 305 7509 246</p>
+              </div>
+            </div>
+            <div className="flex-1 flex flex-col gap-4 md:pl-4">
+              <div>
+                <h3 className="text-sm font-medium text-customGray">Address</h3>
+                <p className="text-sm font-normal text-gray-600">Lahore, Pakistan</p>
+              </div>
+              <div>
+                <h3 className="text-sm font-medium text-customGray">Degree</h3>
+                <p className="text-sm font-normal text-gray-600">BsCs</p>
+              </div>
+              <div>
+                <h3 className="text-sm font-medium text-customGray">Freelance</h3>
+                <p className="text-sm font-normal text-gray-600">Available</p>
               </div>
             </div>
           </div>
-          <div className="main3 w-[50%] gap-[30px] flex flex-col ml-[510px] mx-0 ">
-            <h2 className='text-[21px] font-medium text-customGray'>About Me</h2>
-            <h2 data-aos="fade-left" className='text-[16px] font-medium text-gray-600'>Software Engineer with 2 years of experience in designing, developing, and implementing applications and
-              solutions using a range of technologies and programming languages. Seeking to leverage broad development
-              experience and hands-on technical expertise in a challenging role as a Frontend Developer
-            </h2>
-            <div data-aos="fade-left" className=" flex border-[1px] border-customGray w- rounded-[10px] divide-x ">
-              <div className=" flex flex-col gap-[10px] py-[20px]  w-[58%] px-[30px]  ">
-                <h1 className='text-[16px] font-medium text-customGray ' >Name</h1>
-                <h1 className='text-[16px] font-normal text-gray-600 ' > SAQIB IJAZ</h1>
-                <h1 className='text-[16px] font-medium text-customGray ' >Email</h1>
-                <h1 className='text-[16px] font-normal text-gray-600 ' >saqibijaz488@gmail.com</h1>
-                <h1 className='text-[16px] font-medium text-customGray ' >Phone</h1>
-                <h1 className='text-[16px] font-normal text-gray-600 ' >+92 305 7509 246</h1>
-              </div>
-              <div className=" flex flex-col gap-[10px] py-[20px] pl-[30px] pr-[40px] w-[400px]  ">
-                <h1 className='text-[16px] font-medium text-customGray ' >Address</h1>
-                <h1 className='text-[16px] font-normal text-gray-600 ' >Lahore, Pakistan</h1>
-                <h1 className='text-[16px] font-medium text-customGray ' >Degree</h1>
-                <h1 className='text-[16px] font-normal text-gray-600 ' >BsCs</h1>
-                <h1 className='text-[16px] font-medium text-customGray ' >Freelance</h1>
-                <h1 className='text-[16px] font-normal text-gray-600 ' >Available</h1>
-              </div>
-            </div>
+          <div className="mt-6" data-aos="fade-left">
             <DownloadButton />
           </div>
         </div>
       </div>
+
     </div>
   );
 }

@@ -9,7 +9,7 @@ import Portfolio from "@/compnents/organisms/Portfolio"
 
 function Home() {
   return (
-    <div className='flex  flex-col gap-[50px] ' >
+    <div className='flex  flex-col gap-[30px] overflow-hidden' >
       <div className="d">
         <Header />
       </div>
