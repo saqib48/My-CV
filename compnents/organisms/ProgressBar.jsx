@@ -55,24 +55,24 @@ const ProgressBar = () => {
         </div>
         <div className='w-full md:w-[50%] progress flex flex-col gap-[15px] h-[550px]'>
           <div data-aos="fade-up" data-aos-duration="1500">
-            <p>HTML - <strong>95%</strong></p>
-            <div className="progress-bar" data-progress="90"></div>
+            <p>HTML - <strong>100%</strong></p>
+            <div className="progress-bar" data-progress="100"></div>
           </div>
           <div data-aos="fade-up" data-aos-duration="1200">
-            <p>CSS - <strong>90%</strong></p>
-            <div className="progress-bar" data-progress="85"></div>
+            <p>CSS - <strong>100%</strong></p>
+            <div className="progress-bar" data-progress="100"></div>
           </div>
           <div data-aos="fade-up" data-aos-duration="1100">
-            <p>JavaScript - <strong>85%</strong></p>
-            <div className="progress-bar" data-progress="80"></div>
+            <p>JavaScript - <strong>95%</strong></p>
+            <div className="progress-bar" data-progress="95"></div>
           </div>
           <div data-aos="fade-up" data-aos-duration="900">
-            <p>React.js - <strong>85%</strong></p>
-            <div className="progress-bar" data-progress="75"></div>
+            <p>React.js - <strong>90%</strong></p>
+            <div className="progress-bar" data-progress="90"></div>
           </div>
           <div data-aos="fade-up" data-aos-duration="500">
-            <p>Next.js - <strong>90%</strong></p>
-            <div className="progress-bar" data-progress="80"></div>
+            <p>Next.js - <strong>95%</strong></p>
+            <div className="progress-bar" data-progress="95"></div>
           </div>
         </div>
       </div>
