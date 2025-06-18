@@ -5,7 +5,6 @@ import "../../app/globals.css";
 import Link from 'next/link';
 import { LiaFacebookF } from "react-icons/lia";
 import { RiInstagramFill } from "react-icons/ri";
-import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
@@ -64,7 +63,7 @@ function Header() {
               <RiInstagramFill className="hover:text-gray-500 cursor-pointer ease-in duration-300 h-[20px] w-[20px]" />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/saqib-ijaz-34590a2a3/"
+              href="https://www.linkedin.com/in/saqib-ijaz-872836357/"
               target="_blank"
               rel="noopener noreferrer"
             >
