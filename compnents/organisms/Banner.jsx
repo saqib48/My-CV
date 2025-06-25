@@ -23,10 +23,12 @@ function Banner() {
         className="mt-6 md:mt-0 flex justify-center"
       >
         <Image
-          width={300}
-          height={300}
+          width={600}
+          height={500}
           src="/assits/images/SAQIB.jpg"
           alt="Saqib Ijaz"
+  quality={100}
+  priority
           className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full object-cover"
         />
       </div>

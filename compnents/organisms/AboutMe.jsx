@@ -58,6 +58,8 @@ function AboutMe() {
               data-aos="fade-right"
               src="/assits/images/SAQIB.jpg"
               className="rounded-2xl"
+  quality={100}
+  priority
               alt="saqib"
             />
           </div>

@@ -16,16 +16,20 @@ const Portfolio = () => {
       img: "/assits/images/genroar.png",
     },
     {
-      title: "Orbizone",
-      img: "/assits/images/orbizone.png",
-    },
-    {
       title: "AlFahad Stoe",
       img: "/assits/images/alfahd.webp",
     },
     {
       title: "Genroar Clothing",
       img: "/assits/images/gen.png",
+    },
+    {
+      title: "Arslan Edits",
+      img: "/assits/images/arslan.jpg",
+    },
+    {
+      title: "Orbizone",
+      img: "/assits/images/orbizone.png",
     },
   ];
 
