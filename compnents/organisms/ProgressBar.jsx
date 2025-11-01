@@ -45,7 +45,7 @@ const ProgressBar = () => {
             className="w-full rounded-[30px] object-cover"
             data-aos-duration="500"
             data-aos="fade-left"
-            src="/assits/images/video.webp"
+            src="/assits/images/video.jpg"
             alt="Video Editing Skills"
           />
           <div
