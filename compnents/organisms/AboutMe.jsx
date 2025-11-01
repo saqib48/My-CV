@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import { CiMedal } from "react-icons/ci";
+import Link from 'next/link';
 import "../../app/globals.css";
-import DownloadButton from '../atoms/DownloadButton';
 import Image from 'next/image';
 
 function AboutMe() {
@@ -32,15 +31,15 @@ function AboutMe() {
 
   return (
     <div className="pt-16">
-      <div className="text-center mb-12">
-        <h2 className="text-lg font-medium text-customGray">
+      <div className="text-center mb-14">
+        <h2 className="text-[39px] font-medium text-customGray">
           About Me
         </h2>
         <h2
           data-aos="fade-right"
-          className="text-2xl md:text-4xl font-medium text-customGray leading-tight"
+          className="text-xl md:text-xl font-medium text-customGray leading-tight"
         >
-          A Passionate Developer <br /> Who Loves to Code
+          A Passionate Frontend Developer & Video Editor <br /> Who Loves to Create
         </h2>
       </div>
       <div className="flex justify-between gap-16 md:flex-row flex-col">
@@ -58,25 +57,30 @@ function AboutMe() {
               data-aos="fade-right"
               src="/assits/images/SAQIB.jpg"
               className="rounded-2xl"
-  quality={100}
-  priority
+              quality={100}
+              priority
               alt="saqib"
             />
           </div>
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col gap-6">
-          <h2 data-aos="fade-left" className="text-lg font-medium text-customGray">About Me</h2>
+        <div className="flex-1 flex flex-col gap-6 justify-center">
+          {/* <h2 data-aos="fade-left" className="text-lg font-medium text-customGray">About Me</h2> */}
           <p
             data-aos="fade-left"
             className="text-sm md:text-base font-medium text-gray-600 leading-relaxed"
           >
-            Software Engineer with 2 years of experience in designing, developing, and implementing
-            applications and solutions using a range of technologies and programming languages.
-            Seeking to leverage broad development experience and hands-on technical expertise in a
-            challenging role as a Frontend Developer.
+            I am a creative <span className="text-customGray font-semibold">Video Editor </span>
+            with over <span className="text-customGray font-semibold"> 3 years of experience </span>
+            in crafting visually engaging and professional content for different platforms.
+            Alongside my editing work, I am also a dedicated
+            <span className="text-customGray font-semibold"> Frontend Developer </span>
+            with 2 years of experience in building responsive and dynamic websites.
+            I love combining creativity with technology to deliver high-quality digital experiences.
           </p>
+
+
           <div
             data-aos="fade-left"
             className="flex flex-wrap gap-4 border border-customGray rounded-lg p-4 divide-y md:divide-y-0 md:divide-x"
@@ -88,30 +92,40 @@ function AboutMe() {
               </div>
               <div>
                 <h3 className="text-sm font-medium text-customGray">Email</h3>
-                <p className="text-sm font-normal text-gray-600">saqibijaz488@gmail.com</p>
+                <Link
+                  href="mailto:saqibijaz499@gmail.com"
+                  className="text-sm font-normal text-gray-600 hover:text-[#14d9a7] transition-colors"
+                >
+                  saqibijaz499@gmail.com
+                </Link>
               </div>
               <div>
                 <h3 className="text-sm font-medium text-customGray">Phone</h3>
-                <p className="text-sm font-normal text-gray-600">+92 305 7509 246</p>
+                <Link
+                  href="tel:+923057509246"
+                  className="text-sm font-normal text-gray-600 hover:text-[#14d9a7] transition-colors"
+                >
+                  +92 305 7509 246
+                </Link>
               </div>
             </div>
+
             <div className="flex-1 flex flex-col gap-4 md:pl-4">
+              <div>
+                <h3 className="text-sm font-medium text-customGray">Specialization</h3>
+                <p className="text-sm font-normal text-gray-600">
+                  Video Editing & Frontend Developer
+                </p>
+              </div>
               <div>
                 <h3 className="text-sm font-medium text-customGray">Address</h3>
                 <p className="text-sm font-normal text-gray-600">Lahore, Pakistan</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-medium text-customGray">Degree</h3>
-                <p className="text-sm font-normal text-gray-600">BsCs</p>
               </div>
               <div>
                 <h3 className="text-sm font-medium text-customGray">Freelance</h3>
                 <p className="text-sm font-normal text-gray-600">Available</p>
               </div>
             </div>
-          </div>
-          <div className="mt-6" data-aos="fade-left">
-            <DownloadButton />
           </div>
         </div>
       </div>

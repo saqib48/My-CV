@@ -4,7 +4,6 @@
 
 import Home from "@/pages/home";
 import { useEffect } from 'react';
-import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Ensure you import the AOS CSS
 
