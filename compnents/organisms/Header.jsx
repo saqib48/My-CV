@@ -51,14 +51,14 @@ function Header() {
           {/* Social Icons */}
           <div className="icons flex justify-center gap-[10px] mt-4 md:mt-0">
             <Link
-              href="https://www.facebook.com/share/1PpAuJsbrE/?mibextid=wwXIfr"
+              href="https://www.facebook.com/saqibijaz03/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <LiaFacebookF className="hover:text-gray-500 cursor-pointer ease-in duration-300 h-[20px] w-[20px]" />
             </Link>
             <Link
-              href="https://www.instagram.com/saqibijaz125/"
+              href="https://www.instagram.com/saqibijaz03/"
               target="_blank"
               rel="noopener noreferrer"
             >

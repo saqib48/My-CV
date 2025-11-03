@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
-import '../../public/assits/css/style.css';
+import "../../app/globals.css";
 import { GiSkills } from "react-icons/gi";
 import Image from 'next/image';
 

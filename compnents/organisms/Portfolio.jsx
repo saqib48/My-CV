@@ -7,9 +7,10 @@ const Portfolio = () => {
 
   // 🔹 Video Editing Projects (YouTube links)
   const videoEditingProjects = [
-    { title: "Cinematic Travel Edit", videoUrl: "https://www.youtube.com/embed/ScMzIvxBSi4" },
-    { title: "Short Film Edit", videoUrl: "https://www.youtube.com/embed/ysz5S6PUM-U" },
-    { title: "Client Promo Video", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    { videoUrl: "https://www.youtube.com/embed/J93fYz6E11U" },
+    {  videoUrl: "https://www.youtube.com/embed/bhgjonZ4_jU?si" },
+    { videoUrl: "https://youtube.com/embed/CPw3eDvy398?si" },
+    { videoUrl: "https://www.youtube.com/embed/IJFnZ_5LezY?si" },
   ];
 
   // 🔹 Frontend Development Projects
@@ -65,9 +66,6 @@ const Portfolio = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-semibold text-[#3e3e3e]">{project.title}</h3>
                 </div>
               </div>
             ))}

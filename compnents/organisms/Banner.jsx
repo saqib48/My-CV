@@ -1,8 +1,9 @@
 "use client";
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import "../../app/globals.css";
-import Heading from '../atoms/Heading';
-import Image from 'next/image';
+import Heading from "../atoms/Heading";
 
 function Banner() {
   return (
@@ -10,18 +11,31 @@ function Banner() {
       {/* Left Section */}
       <div
         data-aos="fade-up-right"
-        className="flex flex-col items-center md:items-start gap-[10px] text-center md:text-left"
+        className="flex flex-col items-center md:items-start gap-[7px] text-center md:text-left"
       >
         <Heading level="1">SAQIB IJAZ</Heading>
-        <Heading level="2">Video Editor & Frontend Developer</Heading>
+
+        {/* 👇 Animated Subheading */}
+        <motion.h2
+          className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-[#14d9a7] to-[#3e3e3e] bg-clip-text text-transparent"
+          animate={{ opacity: [0, 1], y: [10, 0] }}
+          transition={{ duration: 1.8, ease: "easeInOut" }}
+        >
+          Video Editor & Frontend Developer
+        </motion.h2>
         <button className="new-button w-[80%] md:w-[45%] mt-3">Get Connected</button>
       </div>
 
-      {/* Right Section */}
-      <div
-        data-aos="flip-left"
-        className="flex justify-center mt-0 md:mt-0"
+      {/* Right Section (Animated Image) */}
+      <motion.div
+        whileHover={{
+          rotate: 3,
+          scale: 1.05,
+          transition: { type: "spring", stiffness: 200 },
+        }}
+        className="flex justify-center mt-0 md:mt-0 relative"
       >
+        <div className="absolute -inset-4 bg-gradient-to-r from-[#14d9a7]/30 to-transparent rounded-full blur-2xl -z-10" />
         <Image
           width={600}
           height={500}
@@ -31,7 +45,7 @@ function Banner() {
           priority
           className="w-[220px] h-[220px] md:w-[400px] md:h-[400px] rounded-full object-cover"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

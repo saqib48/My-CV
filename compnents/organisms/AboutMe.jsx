@@ -76,7 +76,7 @@ function AboutMe() {
             in crafting visually engaging and professional content for different platforms.
             Alongside my editing work, I am also a dedicated
             <span className="text-customGray font-semibold"> Frontend Developer </span>
-            with 2 years of experience in building responsive and dynamic websites.
+            with 1 years of experience in building responsive and dynamic websites.
             I love combining creativity with technology to deliver high-quality digital experiences.
           </p>
 
@@ -102,10 +102,10 @@ function AboutMe() {
               <div>
                 <h3 className="text-sm font-medium text-customGray">Phone</h3>
                 <Link
-                  href="tel:+923057509246"
+                  href="tel:+923295917347"
                   className="text-sm font-normal text-gray-600 hover:text-[#14d9a7] transition-colors"
                 >
-                  +92 305 7509 246
+                  +92 329 591 7347
                 </Link>
               </div>
             </div>
