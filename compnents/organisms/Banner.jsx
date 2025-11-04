@@ -25,7 +25,7 @@ function Banner() {
         </motion.h2>
         <button
   className="new-button w-[80%] md:w-[45%] mt-3"
-  onClick={() => window.open("https://www.instagram.com/direct/t/17844781961709598/", "_blank")}
+  onClick={() => window.open("https://www.instagram.com/saqibijaz03/", "_blank")}
 >
   Get Connected
 </button>
