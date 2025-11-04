@@ -18,12 +18,18 @@ function Banner() {
         {/* 👇 Animated Subheading */}
         <motion.h2
           className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-[#14d9a7] to-[#3e3e3e] bg-clip-text text-transparent"
-          animate={{ opacity: [0, 1], y: [10, 0] }}
+          animate={{ opacity: [0, 1], y: [8, 0] }}
           transition={{ duration: 1.8, ease: "easeInOut" }}
         >
           Video Editor & Frontend Developer
         </motion.h2>
-        <button className="new-button w-[80%] md:w-[45%] mt-3">Get Connected</button>
+        <button
+  className="new-button w-[80%] md:w-[45%] mt-3"
+  onClick={() => window.open("https://www.instagram.com/direct/t/17844781961709598/", "_blank")}
+>
+  Get Connected
+</button>
+
       </div>
 
       {/* Right Section (Animated Image) */}
@@ -35,7 +41,7 @@ function Banner() {
         }}
         className="flex justify-center mt-0 md:mt-0 relative"
       >
-        <div className="absolute -inset-4 bg-gradient-to-r from-[#14d9a7]/30 to-transparent rounded-full blur-2xl -z-10" />
+        <div className="absolute -inset-4 bg-gradient-to-r from-[#14d9a7]/50 to-transparent rounded-full blur-2xl -z-10" />
         <Image
           width={600}
           height={500}

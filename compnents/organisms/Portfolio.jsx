@@ -11,6 +11,8 @@ const Portfolio = () => {
     {  videoUrl: "https://www.youtube.com/embed/bhgjonZ4_jU?si" },
     { videoUrl: "https://youtube.com/embed/CPw3eDvy398?si" },
     { videoUrl: "https://www.youtube.com/embed/IJFnZ_5LezY?si" },
+    { videoUrl: "https://www.youtube.com/embed/JK3IkoVCGRc?si" },
+    { videoUrl: "https://youtube.com/embed/fOepiiDDC2c?si" },
   ];
 
   // 🔹 Frontend Development Projects

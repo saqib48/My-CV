@@ -4,15 +4,15 @@ import { Star } from "lucide-react"; // ⭐ icons
 
 const ClientReviews = () => {
   const reviews = [
-    { name: "David Lee", country: "🇺🇸 USA", role: "Frontend Development Client", message: "He built our web app with speed and precision. Very happy with the end product!", rating: 5 },
-    { name: "Sophia Khan", country: "🇬🇧 UK", role: "Frontend Development Client", message: "Clean code, beautiful UI — and always delivers before deadline. Highly recommend!", rating: 4 },
     { name: "Emily Carter", country: "🇨🇦 Canada", role: "Video Editing Client", message: "Saqib created a stunning video for our brand — professional, creative, and on point.", rating: 5 },
-    { name: "Hassan Ali", country: "🇦🇪 UAE", role: "Video Editing Client", message: "Amazing editing skills! The transitions and effects were top-notch.", rating: 4 },
+    { name: "Hassan Ali", country: "🇦🇪 UAE", role: "Video Editing Client", message: "Amazing editing skills! The transitions and effects were top-notch.", rating: 5},
     { name: "Lucas Brown", country: "🇦🇺 Australia", role: "Video Editing Client", message: "Our short film edit came out cinematic and emotional. Loved working with him.", rating: 5 },
-    { name: "John Miller", country: "🇩🇪 Germany", role: "Frontend Development Client", message: "Working with Saqib was an excellent experience! Great code quality and communication.", rating: 5 },
-    { name: "Rina Tanaka", country: "🇯🇵 Japan", role: "Frontend Development Client", message: "Saqib is a highly skilled developer — delivers fast with perfect attention to detail.", rating: 4 },
     { name: "Ava Johnson", country: "🇫🇷 France", role: "Video Editing Client", message: "Perfect sense of rhythm and storytelling — turned raw clips into a masterpiece.", rating: 5 },
     { name: "Daniel Smith", country: "🇸🇪 Sweden", role: "Video Editing Client", message: "Highly professional editor who brings brand identity to life through his work.", rating: 5 },
+    { name: "John Miller", country: "🇩🇪 Germany", role: "Frontend Development Client", message: "Working with Saqib was an excellent experience! Great code quality and communication.", rating: 5 },
+    { name: "David Lee", country: "🇺🇸 USA", role: "Frontend Development Client", message: "He built our web app with speed and precision. Very happy with the end product!", rating: 5 },
+    { name: "Sophia Khan", country: "🇬🇧 UK", role: "Frontend Development Client", message: "Clean code, beautiful UI — and always delivers before deadline. Highly recommend!", rating: 5 },
+    { name: "Rina Tanaka", country: "🇯🇵 Japan", role: "Frontend Development Client", message: "Saqib is a highly skilled developer — delivers fast with perfect attention to detail.", rating: 4 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
