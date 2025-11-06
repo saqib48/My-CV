@@ -31,10 +31,12 @@ const Portfolio = () => {
       { videoUrl: "https://www.youtube.com/embed/bhgjonZ4_jU" },
     ],
     realEstate: [
+      { videoUrl: "https://www.youtube.com/embed/dBwJFdZMLMI" },
       { videoUrl: "https://www.youtube.com/embed/_-PyMkznEz0" },
+      { videoUrl: "https://www.youtube.com/embed/lND_A4ub_Zo" },
+      { videoUrl: "https://www.youtube.com/embed/4WtiHfbxBmA" },
       { videoUrl: "https://www.youtube.com/embed/Bk-4WZvFHqY" },
       { videoUrl: "https://www.youtube.com/embed/gsd-vV_FuH0" },
-      { videoUrl: "https://www.youtube.com/embed/4WtiHfbxBmA" },
 
     ],
     podcasts: [
