@@ -1,67 +1,85 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Play } from "lucide-react";
 
-const Portfolio = () => {
+export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("video");
   const [activeCategory, setActiveCategory] = useState("short");
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
-  // 🔹 Video Editing Projects by category
-  const videoEditingProjects = {
-    short: [
-      { videoUrl: "https://www.youtube.com/embed/7OjKq347Cd8?" },
-      { videoUrl: "https://www.youtube.com/embed/9ojFF-StVcQ" },
-      { videoUrl: "https://www.youtube.com/embed/31zOAnADHgk" },
-      { videoUrl: "https://www.youtube.com/embed/gkl8SZ5tufw" },
-      { videoUrl: "https://www.youtube.com/embed/d4zZUCxFBww" },
-      { videoUrl: "https://www.youtube.com/embed/qlHD1vID8BY" },
-      { videoUrl: "https://www.youtube.com/embed/9rMigxpL5j8" },
-
-    ],
-    long: [
-      { videoUrl: "https://www.youtube.com/embed/BAWj5UI1Q9A" },
-      { videoUrl: "https://www.youtube.com/embed/nHjyqtJ8nfE" },
-    ],
-    beforeAfter: [
-      { videoUrl: "https://www.youtube.com/embed/JK3IkoVCGRc" },
-      { videoUrl: "https://www.youtube.com/embed/fOepiiDDC2c" },
-      { videoUrl: "https://www.youtube.com/embed/CPw3eDvy398" },
-      { videoUrl: "https://www.youtube.com/embed/IJFnZ_5LezY" },
-      { videoUrl: "https://www.youtube.com/embed/J93fYz6E11U" },
-      { videoUrl: "https://www.youtube.com/embed/bhgjonZ4_jU" },
-    ],
-    realEstate: [
-      { videoUrl: "https://www.youtube.com/embed/dBwJFdZMLMI" },
-      { videoUrl: "https://www.youtube.com/embed/_-PyMkznEz0" },
-      { videoUrl: "https://www.youtube.com/embed/lND_A4ub_Zo" },
-      { videoUrl: "https://www.youtube.com/embed/4WtiHfbxBmA" },
-      { videoUrl: "https://www.youtube.com/embed/Bk-4WZvFHqY" },
-      { videoUrl: "https://www.youtube.com/embed/gsd-vV_FuH0" },
-
-    ],
-    podcasts: [
-      { videoUrl: "https://www.youtube.com/embed/I_wkMPAL6TY" },
-      { videoUrl: "https://www.youtube.com/embed/J93fYz6E11U" },
-
-
-    ],
-    thumbnails: [
-      { img: "/assits/images/t1.PNG" },
-      { img: "/assits/images/t2.PNG" },
-      { img: "/assits/images/t3.PNG" },
-      { img: "/assits/images/t4.PNG" },
-      { img: "/assits/images/t5.PNG" },
-      { img: "/assits/images/t6.PNG" },
-      { img: "/assits/images/t7.PNG" },
-      { img: "/assits/images/t8.PNG" },
-      { img: "/assits/images/t9.PNG" },
-      { img: "/assits/images/t10.PNG" },
-      { img: "/assits/images/t11.PNG" },
-      { img: "/assits/images/t12.PNG" },
-    ],
+  const getYouTube = (url) => {
+    if (!url) return {};
+    let match = url.match(/v=([a-zA-Z0-9_-]+)/);
+    if (!match) match = url.match(/shorts\/([a-zA-Z0-9_-]+)/);
+    if (!match) return {};
+    const id = match[1];
+    return {
+      embed: `https://www.youtube.com/embed/${id}`,
+      thumb: `https://img.youtube.com/vi/${id}/hqdefault.jpg`,
+    };
   };
 
-  // 🔹 Frontend Development Projects
+  const videoEditingProjects = {
+  short: [
+    getYouTube("https://www.youtube.com/watch?v=9ojFF-StVcQ"),
+    getYouTube("https://www.youtube.com/watch?v=qlHD1vID8BY"),
+    getYouTube("https://www.youtube.com/watch?v=7OjKq347Cd8"),
+    getYouTube("https://www.youtube.com/watch?v=I7QCl4IKsaE"),
+    getYouTube("https://www.youtube.com/watch?v=gkl8SZ5tufw"),
+    getYouTube("https://www.youtube.com/watch?v=sdPezqF5uoY"),
+    getYouTube("https://www.youtube.com/watch?v=d4zZUCxFBww"),
+     getYouTube("https://www.youtube.com/watch?v=31zOAnADHgk"),
+    getYouTube("https://www.youtube.com/watch?v=9rMigxpL5j8"),
+  ],
+
+  long: [
+    getYouTube("https://www.youtube.com/watch?v=BAWj5UI1Q9A"),
+    getYouTube("https://www.youtube.com/watch?v=nHjyqtJ8nfE"),
+    getYouTube("https://www.youtube.com/watch?v=y2G3VXaAJXE"),
+  ],
+
+  beforeAfter: [
+    getYouTube("https://www.youtube.com/watch?v=JK3IkoVCGRc"),
+    getYouTube("https://www.youtube.com/watch?v=fOepiiDDC2c"),
+    getYouTube("https://www.youtube.com/watch?v=CPw3eDvy398"),
+    getYouTube("https://www.youtube.com/watch?v=IJFnZ_5LezY"),
+    getYouTube("https://www.youtube.com/watch?v=J93fYz6E11U"),
+    getYouTube("https://www.youtube.com/watch?v=bhgjonZ4_jU"),
+  ],
+
+  realEstate: [
+    getYouTube("https://www.youtube.com/watch?v=dBwJFdZMLMI"),
+    getYouTube("https://www.youtube.com/watch?v=_-PyMkznEz0"),
+    getYouTube("https://www.youtube.com/watch?v=lND_A4ub_Zo"),
+    getYouTube("https://www.youtube.com/watch?v=4WtiHfbxBmA"),
+    getYouTube("https://www.youtube.com/watch?v=Bk-4WZvFHqY"),
+    getYouTube("https://www.youtube.com/watch?v=gsd-vV_FuH0"),
+  ],
+
+  podcasts: [
+    getYouTube("https://www.youtube.com/watch?v=I_wkMPAL6TY"),
+    getYouTube("https://www.youtube.com/watch?v=J93fYz6E11U"),
+  ],
+
+  thumbnails: [
+    { img: "/assits/images/t1.PNG" },
+    { img: "/assits/images/t2.PNG" },
+    { img: "/assits/images/t3.PNG" },
+    { img: "/assits/images/t4.PNG" },
+    { img: "/assits/images/t5.PNG" },
+    { img: "/assits/images/t6.PNG" },
+    { img: "/assits/images/t7.PNG" },
+    { img: "/assits/images/t8.PNG" },
+    { img: "/assits/images/t9.PNG" },
+    { img: "/assits/images/t10.PNG" },
+    { img: "/assits/images/t11.PNG" },
+    { img: "/assits/images/t12.PNG" },
+  ],
+};
+
+
   const frontendProjects = [
     { title: "CTW GLOBAL", img: "/assits/images/global.png" },
     { title: "Learn Genroar", img: "/assits/images/genroar.png" },
@@ -71,6 +89,16 @@ const Portfolio = () => {
     { title: "YallaDoThis", img: "/assits/images/yalla.png" },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
     <div className="mt-[-4%] mb-[80px]">
       <div className="container mx-auto px-4">
@@ -78,14 +106,11 @@ const Portfolio = () => {
           My Portfolio
         </h2>
 
-        {/* 🔸 Main Tabs */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10 w-full">
           <button
             onClick={() => setActiveTab("video")}
-            className={`new-button w-full md:w-[250px] sm:w-auto px-8 py-2 text-base font-medium text-center ${
-              activeTab === "video"
-                ? "bg-[#3e3e3e] text-white"
-                : "text-[#3e3e3e]"
+            className={`new-button w-full md:w-[250px] px-8 py-2 text-base font-medium text-center ${
+              activeTab === "video" ? "bg-[#3e3e3e] text-white" : "text-[#3e3e3e]"
             }`}
           >
             🎬 Video Editing
@@ -93,23 +118,20 @@ const Portfolio = () => {
 
           <button
             onClick={() => setActiveTab("frontend")}
-            className={`new-button w-full sm:w-auto px-8 py-2 text-base font-medium text-center ${
-              activeTab === "frontend"
-                ? "bg-[#3e3e3e] text-white"
-                : "text-[#3e3e3e]"
+            className={`new-button w-full md:w-[250px] px-8 py-2 text-base font-medium text-center ${
+              activeTab === "frontend" ? "bg-[#3e3e3e] text-white" : "text-[#3e3e3e]"
             }`}
           >
             💻 Frontend Development
           </button>
         </div>
 
-        {/* 🔹 Video Editing Category Tabs */}
         {activeTab === "video" && (
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
               { key: "short", label: "Short Form" },
               { key: "long", label: "Long Form" },
-              { key: "beforeAfter", label: "Before & After" },
+              { key: "beforeAfter", label: "Before / After" },
               { key: "realEstate", label: "Real Estate" },
               { key: "podcasts", label: "Podcasts" },
               { key: "thumbnails", label: "Thumbnails" },
@@ -129,62 +151,90 @@ const Portfolio = () => {
           </div>
         )}
 
-        {/* 🔹 Conditional Rendering */}
         {activeTab === "video" ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div
+            key={activeCategory}
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
             {videoEditingProjects[activeCategory]?.map((project, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="bg-white shadow-lg rounded-lg overflow-hidden"
+                variants={itemVariants}
+                className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer group"
+                onClick={() => project.embed && setSelectedVideo(project)}
               >
                 {activeCategory === "thumbnails" ? (
                   <Image
                     src={project.img}
-                    alt={`Thumbnail ${index + 1}`}
+                    alt="Thumbnail"
                     width={1000}
                     height={200}
-                    className="w-full h-56"
-
+                    className="w-full h-56 object-cover"
                   />
                 ) : (
-                  <iframe
-                    className="w-full h-56"
-                    src={project.videoUrl}
-                    title={`Video ${index + 1}`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <div className="relative aspect-video overflow-hidden">
+                    <img
+                      src={project.thumb}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                      <Play size={48} className="text-white" />
+                    </div>
+                  </div>
                 )}
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {frontendProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg rounded-lg overflow-hidden"
-              >
-                <Image
-                  width={1000}
-                  height={200}
-                  src={project.img}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-semibold text-[#3e3e3e]">
-                    {project.title}
-                  </h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-
+ 3 gap-6 mt-6">
+    {frontendProjects.map((p, i) => (
+      <motion.div
+        key={i}
+        variants={itemVariants}
+        initial="hidden"
+        animate="visible"
+        className="bg-white shadow-lg rounded-lg overflow-hidden"
+      >
+       <Image
+  src={p.img}
+  alt={p.title}
+  width={1000}
+  height={300}
+  className="w-full h-60 object-cover object-left "
+/>
+        <div className="p-4 text-center font-semibold text-customGray">
+          {p.title}
+        </div>
+      </motion.div>
+    ))}
+  </div>
+)
+}
 
-export default Portfolio;
+{selectedVideo && (
+  <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+    <div className="bg-white rounded-lg overflow-hidden w-full max-w-3xl relative">
+      <button
+        onClick={() => setSelectedVideo(null)}
+        className="absolute top-3 right-3 bg-black text-white rounded-full px-3 py-1"
+      >
+        ✕
+      </button>
+      <iframe
+        src={selectedVideo.embed}
+        className="w-full h-[400px]"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+)}
+
+</div>
+</div>
+);
+}
