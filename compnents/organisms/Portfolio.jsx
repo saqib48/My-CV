@@ -23,15 +23,20 @@ export default function Portfolio() {
 
   const videoEditingProjects = {
   short: [
+    getYouTube("https://www.youtube.com/watch?v=6frRf-iMerE"),
+    getYouTube("https://www.youtube.com/watch?v=g_UmGsmYsc0"),
+    getYouTube("https://www.youtube.com/watch?v=1YMxtLU9rZs"),
     getYouTube("https://www.youtube.com/watch?v=9ojFF-StVcQ"),
+    getYouTube("https://www.youtube.com/watch?v=-0Y-xhDleOg"),
     getYouTube("https://www.youtube.com/watch?v=qlHD1vID8BY"),
     getYouTube("https://www.youtube.com/watch?v=7OjKq347Cd8"),
     getYouTube("https://www.youtube.com/watch?v=I7QCl4IKsaE"),
     getYouTube("https://www.youtube.com/watch?v=gkl8SZ5tufw"),
     getYouTube("https://www.youtube.com/watch?v=sdPezqF5uoY"),
     getYouTube("https://www.youtube.com/watch?v=d4zZUCxFBww"),
-     getYouTube("https://www.youtube.com/watch?v=31zOAnADHgk"),
+    getYouTube("https://www.youtube.com/watch?v=31zOAnADHgk"),
     getYouTube("https://www.youtube.com/watch?v=9rMigxpL5j8"),
+    getYouTube("https://www.youtube.com/watch?v=3oINjRb0Kcg"),
   ],
 
   long: [
@@ -52,6 +57,7 @@ export default function Portfolio() {
   realEstate: [
     getYouTube("https://www.youtube.com/watch?v=dBwJFdZMLMI"),
     getYouTube("https://www.youtube.com/watch?v=_-PyMkznEz0"),
+    getYouTube("https://www.youtube.com/watch?v=kUsDwdA6Xy8"),
     getYouTube("https://www.youtube.com/watch?v=lND_A4ub_Zo"),
     getYouTube("https://www.youtube.com/watch?v=4WtiHfbxBmA"),
     getYouTube("https://www.youtube.com/watch?v=Bk-4WZvFHqY"),
@@ -59,8 +65,11 @@ export default function Portfolio() {
   ],
 
   podcasts: [
+    getYouTube("https://www.youtube.com/watch?v=sdPezqF5uoY"),
     getYouTube("https://www.youtube.com/watch?v=I_wkMPAL6TY"),
     getYouTube("https://www.youtube.com/watch?v=J93fYz6E11U"),
+    getYouTube("https://www.youtube.com/watch?v=GWhcAKLex9w"),
+
   ],
 
   thumbnails: [

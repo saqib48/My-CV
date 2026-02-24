@@ -72,11 +72,11 @@ function AboutMe() {
             className="text-sm md:text-base font-medium text-gray-600 leading-relaxed"
           >
             I am a creative <span className="text-customGray font-semibold">Video Editor </span>
-            with over <span className="text-customGray font-semibold"> 3 years of experience </span>
+            with over <span className="text-customGray font-semibold"> 4 years of experience </span>
             in crafting visually engaging and professional content for different platforms.
             Alongside my editing work, I am also a dedicated
             <span className="text-customGray font-semibold"> Frontend Developer </span>
-            with 1 years of experience in building responsive and dynamic websites.
+            with 2 years of experience in building responsive and dynamic websites.
             I love combining creativity with technology to deliver high-quality digital experiences.
           </p>
 
