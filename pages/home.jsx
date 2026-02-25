@@ -24,11 +24,11 @@ function Home() {
             <div id="skill" className="pt-[100px]">
         <Skill />
       </div>
-      <div className="pt-[100px]" id="card">
-        <Cards />
-      </div>
       <div id="Portfolio" className="pt-[140px]">
         <Portfolio />
+      </div>
+      <div className="pt-[100px]" id="card">
+        <Cards />
       </div>
       <div id="Reviews">
         <ClientReviews/>

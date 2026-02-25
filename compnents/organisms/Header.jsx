@@ -16,7 +16,7 @@ function Header() {
     <div className="bg-white z-20 border-b-[1px] pt-[9px] pb-[9px] shadow-top fixed top-0 left-0 w-full">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
         {/* Logo */}
-        <div className="text-black text-[30px] font-semibold first-letter:text-[#3cdeab]">
+        <div className="text-black text-[30px] font-semibold first-letter:text-yellow-400">
           <Link href="#"> SI</Link>
         </div>
 
@@ -43,8 +43,8 @@ function Header() {
           <div className="nav flex flex-col md:flex-row md:gap-[20px] text-center">
             <Link href="#about_me">About</Link>
             <Link href="#skill">Skills</Link>
-            <Link href="#card">Experience</Link>
             <Link href="#Portfolio">Portfolio</Link>
+            <Link href="#card">Experience</Link>
             <Link href="#Reviews">Reviews</Link>
           </div>
 

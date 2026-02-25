@@ -4,6 +4,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+    icons: {
+    icon: "/favicon.ico",
+  },
   title: "SAQIB IJAZ - Video Editor",
   description: "Professional video editing and motion design services. Specializing in YouTube content, social media reels, commercials, and cinematic storytelling.",
 };

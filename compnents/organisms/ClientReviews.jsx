@@ -64,7 +64,7 @@ const ClientReviews = () => {
               {/* Header */}
               <div>
                 <div className="flex items-center justify-center gap-2 mb-2">
-                  <h4 className="font-semibold text-lg text-[#14d9a7]">{review.name}</h4>
+                  <h4 className="font-semibold text-lg text-[#edca68]">{review.name}</h4>
                   <span className="text-sm text-gray-600">{review.country}</span>
                 </div>
 
@@ -74,8 +74,8 @@ const ClientReviews = () => {
                     <Star
                       key={starIndex}
                       size={18}
-                      fill={starIndex < review.rating ? "#14d9a7" : "none"}
-                      stroke={starIndex < review.rating ? "#14d9a7" : "#d1d5db"}
+                      fill={starIndex < review.rating ? "#edca68" : "none"}
+                      stroke={starIndex < review.rating ? "#edca68" : "#d1d5db"}
                     />
                   ))}
                 </div>
@@ -99,8 +99,8 @@ const ClientReviews = () => {
             onClick={() => setCurrentIndex(index * (isMobile ? 1 : 3))}
             className={`w-3 h-3 rounded-full transition-all ${
               Math.floor(currentIndex / (isMobile ? 1 : 3)) === index
-                ? "bg-[#14d9a7] scale-110"
-                : "bg-gray-400 hover:bg-[#14d9a7]/70"
+                ? "bg-[#edca68] scale-110"
+                : "bg-gray-400 hover:bg-[#edca68]/70"
             }`}
           ></button>
         ))}

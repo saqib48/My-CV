@@ -94,7 +94,7 @@ function AboutMe() {
                 <h3 className="text-sm font-medium text-customGray">Email</h3>
                 <Link
                   href="mailto:saqibijaz499@gmail.com"
-                  className="text-sm font-normal text-gray-600 hover:text-[#14d9a7] transition-colors"
+                  className="text-sm font-normal text-gray-600 hover:text-[#edca68] transition-colors"
                 >
                   saqibijaz499@gmail.com
                 </Link>
@@ -103,7 +103,7 @@ function AboutMe() {
                 <h3 className="text-sm font-medium text-customGray">Phone</h3>
                 <Link
                   href="tel:+923295917347"
-                  className="text-sm font-normal text-gray-600 hover:text-[#14d9a7] transition-colors"
+                  className="text-sm font-normal text-gray-600 hover:text-[#edca68] transition-colors"
                 >
                   +92 329 591 7347
                 </Link>
